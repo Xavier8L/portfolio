@@ -6,7 +6,7 @@ public class User {
 
 
     public boolean ControlerWachtwoord(String wachtwoord){
-        if(wachtwoord == this.wachtwoord ){
+        if(this.wachtwoord.equals(wachtwoord)){
             return true;
         }else{
             return false;

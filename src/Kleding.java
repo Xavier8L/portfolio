@@ -4,7 +4,7 @@
 
         double prijs;
 
-
+        String categorie;
 
 
 
@@ -13,6 +13,18 @@
                 this.kleur = kleur;
                 this.prijs = prijs;
         }
+
+         public void setNaam(String naam) {
+                 this.naam = naam;
+         }
+
+         public void setKleur(String kleur) {
+                 this.kleur = kleur;
+         }
+
+         public void setPrijs(double prijs) {
+                 this.prijs = prijs;
+         }
 
          public void Print(){
                  System.out.println("Het best kleding is "+ naam);
@@ -23,8 +35,10 @@
  }
 
 class Jas extends Kleding {
+
         public Jas(String naam, String kleur,double prijs) {
                 super(naam, kleur,prijs);
+                this.categorie = "jas";
         }
 
         @Override
@@ -38,6 +52,7 @@ class Jas extends Kleding {
 class Topje extends Kleding{
         public Topje(String naam, String kleur,double prijs) {
                 super(naam, kleur,prijs);
+                this.categorie = "topje";
         }
 
         @Override
@@ -47,8 +62,10 @@ class Topje extends Kleding{
 }
 
 class Broek extends Kleding{
+
         public Broek(String naam, String kleur,double prijs) {
                 super(naam, kleur,prijs);
+                this.categorie = "broek";
         }
 
         @Override
@@ -58,9 +75,10 @@ class Broek extends Kleding{
 }
 
 class Schoen extends Kleding{
-        String categorie = "schoen";
+
         public Schoen(String naam, String kleur,double prijs) {
                 super(naam, kleur,prijs);
+                this.categorie = "schoen";
         }
 
         @Override
